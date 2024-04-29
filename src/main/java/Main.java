@@ -14,7 +14,7 @@ public class Main {
         Animal benjamin = new Animal("2", "Benjamin Blümchen", elephant, (short) 34, null);
         Animal alfred = new Animal("3", "Alfred Jodokus Quack", duck, (short) 15, null);
         Animal struppi = new Animal("4", "Struppi", dog, (short) 1, aljoscha);
-        Animal wolfi = new Animal("5", "Wolfi", dog, (short) 10, aljoscha);
+        Animal wolfi = new Animal("5", "Wolfi", dog, (short) 10, katharina);
         Animal richard = new Animal("6", "Richard", dog, (short) 7, heinz);
 
         System.out.println(susie.equals(benjamin));
