@@ -1,4 +1,5 @@
 import com.aljoschazoeller.java.bankservice.Account;
+import com.aljoschazoeller.java.bankservice.BankService;
 import com.aljoschazoeller.java.bankservice.Client;
 import com.aljoschazoeller.java.zoo.Animal;
 import com.aljoschazoeller.java.zoo.Owner;
@@ -32,6 +33,16 @@ public class Main {
 
         Client aljoschaZ = new Client("Aljoscha", "Zöller", 2365987263597L);
         Client kaetheK = new Client("Käthe", "Kollwitz", 227365276L);
+
+        BankService bankService = new BankService();
+
+        String aljoschasMainAccountNumber = bankService.openAccount(aljoschaZ);
+        String aljoschasSavingAccountNumber = bankService.openAccount(aljoschaZ);
+        String kaethesMainAccountNumber = bankService.openAccount(kaetheK);
+
+        System.out.println(aljoschasMainAccountNumber);
+        System.out.println(aljoschasSavingAccountNumber);
+
 
 
     }
