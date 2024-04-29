@@ -30,8 +30,8 @@ public class Main {
 
         System.out.println("------------------------------");
 
-        Client aljoscha = new Client("Aljoscha", "Zöller", 2365987263597L);
-        Client kaethe = new Client("Käthe", "Kollwitz", 227365276L);
+        Client aljoschaZ = new Client("Aljoscha", "Zöller", 2365987263597L);
+        Client kaetheK = new Client("Käthe", "Kollwitz", 227365276L);
 
         Account aljoschaMain = new Account();
 
