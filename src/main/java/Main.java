@@ -1,3 +1,5 @@
+import com.aljoschazoeller.java.bankservice.Account;
+import com.aljoschazoeller.java.bankservice.Client;
 import com.aljoschazoeller.java.zoo.Animal;
 import com.aljoschazoeller.java.zoo.Owner;
 import com.aljoschazoeller.java.zoo.Species;
@@ -27,6 +29,11 @@ public class Main {
         System.out.println(susie);
 
         System.out.println("------------------------------");
+
+        Client aljoscha = new Client("Aljoscha", "Zöller", 2365987263597L);
+        Client kaethe = new Client("Käthe", "Kollwitz", 227365276L);
+
+        Account aljoschaMain = new Account();
 
 
     }
