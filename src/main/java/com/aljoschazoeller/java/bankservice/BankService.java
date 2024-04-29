@@ -21,7 +21,7 @@ public class BankService {
         return newAccount.getAccountNumber();
     }
 
-    public void transferMoney(String sourceAccountNumber, String targetAccountNumber, BigDecimal amount) {
+    public int transferMoney(String sourceAccountNumber, String targetAccountNumber, BigDecimal amount) {
         Account sourceAccount = null;
         Account targetAccount = null;
 
@@ -39,6 +39,8 @@ public class BankService {
         if (sourceAccount != null && targetAccount != null) {
             sourceAccount.withdrawMoney(amount);
             targetAccount.depositMoney(amount);
+            return 1;
         }
+        return -1;
     }
 }
