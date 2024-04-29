@@ -1,2 +1,2 @@
-public record Animal(String id, String name, String species, short age) {
+public record Animal(String id, String name, String species, short age, Owner owner) {
 }
