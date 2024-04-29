@@ -1,3 +1,7 @@
+import com.aljoschazoeller.java.zoo.Animal;
+import com.aljoschazoeller.java.zoo.Owner;
+import com.aljoschazoeller.java.zoo.Species;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -21,6 +25,8 @@ public class Main {
         System.out.println(susie.equals(susie));
 
         System.out.println(susie);
+
+        System.out.println("------------------------------");
 
 
     }
